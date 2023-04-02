@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class loop {
+    public static void main(String[] args){
+        int a;
+        Scanner scn = new Scanner(System.in);
+        while(true){
+            System.out.print("Masukan Angka = ");
+        a = scn.nextInt();
+        int Hasil = a;
+        if(a==0){
+            System.out.println("Perkalian Faktorial adalah = 1 ");
+            System.out.println("Hasilnya adalah = 1 ");
+            break;
+        }
+        System.out.print("Perkalian Faktorial adalah = ");
+        for(int i = a; i>0 ; i--){
+            System.out.print(i);
+            if(i>1){
+                System.out.print("x");
+            }
+            if(a !=i){
+                Hasil *=i;
+            }
+        }
+        System.out.println("");
+        System.out.println("Hasilnya adalah = "+Hasil);
+        }
+        
+    } 
+    
+}
